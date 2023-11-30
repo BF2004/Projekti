@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Adi Boutique</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+</head>
+<body>
+    <nav class="navbar">
+     <div class="logo">
+         <a href="#"><i class="fas fa-shopping-cart"></i> Adi Boutique</a>
+    </div>
+        <div class="menu">
+                    <ul>
+                        <li><a href="#"> Home</a></li>
+                        <li><a href="#"> Shop</a></li>
+                        <li><a href="#"> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="user-actions">
+                    <a href="#"><i class="fas fa-user"></i> Login</a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+                </div>
+            </nav>
+            
+<section id="produkti" class="selection-p1">
+   <div class="first-img">
+    <img src="https://static.pullandbear.net/2/photos//2023/I/0/2/p/3684/507/833/3684507833_2_4_8.jpg?t=1698657995681&imwidth=1125"width="100%" id="fig1" alt="">
+        <div class="small-imgs">
+            <div class="img-small">
+                <img src="https://static.pullandbear.net/2/photos//2023/I/0/2/p/7686/509/833/7686509833_2_2_8.jpg?t=1688975953823&imwidth=1125" width="100" id="small-fig"alt="">
+            </div>
+            <div class="img-small">
+                <img src="https://static.pullandbear.net/2/photos//2023/I/0/2/p/3684/507/833/3684507833_2_4_8.jpg?t=1698657995681&imwidth=1125"width="100%" id="small-fig" alt="">
+            </div>
+            <div class="img-small">
+                <img src="https://static.pullandbear.net/2/photos//2023/I/0/2/p/3684/507/833/3684507833_2_4_8.jpg?t=1698657995681&imwidth=1125"width="100%" id="small-fig" alt="">
+            </div>
+            <div class="img-small">
+                <img src="https://static.pullandbear.net/2/photos//2023/I/0/2/p/3684/507/833/3684507833_2_4_8.jpg?t=1698657995681&imwidth=1125"width="100%" id="small-fig" alt="">
+            </div>
+        </div>
+   </div> 
+   <div class="details-product">
+    <h4>Man Pants</h4>
+    <h2>11.22$</h2>
+    <select >
+        <option >Select Your Size</option>
+        <option >Large</option>
+        <option >Medium</option>
+        <option >Small</option>
+    </select>
+    <input type="number" value="1">
+    <button>Add To Cart</button>
+    <h4>Details</h4>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nam hic amet deserunt, temporibus exercitationem qui mollitia doloribus ipsa facilis culpa itaque vel ullam veniam, numquam velit officiis optio doloremque!</span>
+   </div>
+</section>
+
+
+   <section id="newsletter"class="selection-p1 section-m1">
+    <div class="newstext">
+    <h4>Sign up for more</h4>
+    <p>Get email updates about ur special offers</p>
+
+</div>
+<div class="form">
+    <input type="text" placeholder="Your Email Address">
+    <button class="normal">Sign Up</button>
+</div>
+   </section>
+
+   <footer class="section footer">
+    <div class="col">
+        <a href="#"><i class="fas fa-shopping-cart"></i> Adi Boutique</a>
+        <h4>Contact</h4>
+        <p><strong>Address:  </strong> Lipjan Rr.Lidhja Prizerenit Nr:161</p>
+        <p><strong>Phone:  </strong> 044-111-222   /   045-111-222</p>
+        <p><strong>Schedule:  </strong> Mon-Fri :  09-19 ; Sat : 10-18 </p>
+       </div>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        
+    </div>
+   </footer>
+<!--   <script>
+   var fig1 = document.getElementById("first-img");
+var smallimgs = document.querySelectorAll(".img-small");
+
+smallimgs[0].onclick = function(){
+    fig1.src = smallimgs[0].src;
+}
+
+smallimgs[1].onclick = function(){
+    fig1.src = smallimgs[1].src;
+}
+
+smallimgs[2].onclick = function(){
+    fig1.src = smallimgs[2].src;
+}
+
+smallimgs[3].onclick = function(){
+    fig1.src = smallimgs[3].src;
+}
+
+   </script> -->
+    <script>
+        var fig1 = document.getElementById("fig1");
+        var smallImgs = document.querySelectorAll(".img-small");
+
+        smallImgs.forEach(function (img, index) {
+            img.onclick = function () {
+                fig1.src = img.src;
+            };
+        });
+    </script>
+</body>
+</html>
