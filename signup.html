@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adi Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="start">
+        <div class="logo">
+            <a href="#"><i class="fas fa-shopping-cart"></i> Adi Boutique</a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="Projekti.html"> Home</a></li>
+                <li><a href="shop.html"> Shop</a></li>
+                <li><a href="contact.html"> Contact</a></li>
+            </ul>
+        </div>
+        <div class="actions">
+            <a href="signup.html"><i class="fas fa-user"></i> Login</a>
+            <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+        </div>
+    </nav>
+    <br>
+    <div class="center-wrapper">
+        <div class="wrapper">
+            <form id="signupForm" action="" onsubmit="return validateForm()">
+                <h1>Sign Up</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Name" id="name" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Surname" id="surname" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Address" id="Address" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="New Username" id="username" required>
+                    <i class='bx bxs-user-plus'></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" id="email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" id="password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Confirm Password" id="confirm-password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <div class="register-link">
+                    <p>Already have an account? <a href="login.html">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var surname = document.getElementById('surname').value;
+            var address = document.getElementById('address').value;
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirm-password').value;
+
+            var nameRegex = /^[a-zA-Z\s]+$/;
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!nameRegex.test(name)) {
+                alert('Please enter a valid name.');
+                return false;
+            }
+
+            if (!nameRegex.test(surname)) {
+                alert('Please enter a valid surname.');
+                return false;
+            }
+            if (address.trim() === '') {
+                alert('Please enter a valid address.');
+                return false;
+            }
+
+            if (!nameRegex.test(username)) {
+                alert('Please enter a valid username.');
+                return false;
+            }
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+
+            if (password.length < 8) {
+                alert('Password must be at least 8 characters long.');
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert('Passwords do not match.');
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
