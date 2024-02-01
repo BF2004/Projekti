@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adi Boutique</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+</head>
+<body>
+    <nav class="start">
+     <div class="logo">
+         <a href="#"><i class="fas fa-shopping-cart"></i> Adi Boutique</a>
+    </div>
+        <div class="menu">
+                    <ul>
+                        <li><a href="Projekti.html"> Home</a></li>
+                        <li><a href="shop.html"> Shop</a></li>
+                        <li><a href="bestsellers.html"> BestSellers</a></li>
+                        <li><a href="todaysdeals.html"> Today's Deals</a></li>
+                        <li><a href="contact.html"> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="actions">
+                    <a href="signup.html"><i class="fas fa-user"></i> Login</a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+                </div>
+            </nav>
+            <section class="praragraphT">
+                <div class="praragraph-c">
+                        <h1>#today'sDeals
+                        </h1>
+                </div>
+            </section>
+            <div class="slider" role="region" aria-label="Image Slider">
+                <div class="sliders" role="region" aria-label="Image Slider">
+                  <button id="prev-slide" class="slide-button material-symbols-rounded" aria-label="Previous Slide">
+                    <span class="visually-hidden">Previous Slide</span>
+                    <
+                  </button>
+                  <div class="imgs">
+                    <img src="images/slider1.jpg" alt="Image 1" class="image">
+                    <img src="images/slider2.jpg" alt="Image 2" class="image">
+                    <img src="images/slider3.jpg" alt="Image 3" class="image">
+                    <img src="images/slider4.jpg" alt="Image 4" class="image">
+                    <img src="images/slider5.jpg" alt="Image 5" class="image">
+                    <img src="images/slider6.jpg" alt="Image 6" class="image">
+                    <img src="images/slider7.jpg" alt="Image 7" class="image">
+                  </div>
+                  <button id="next-slide" class="slide-button material-symbols-rounded" aria-label="Next Slide">
+                    <span class="visually-hidden">Next Slide</span>
+                    >
+                  </button>
+                </div>
+              </div>
+              
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+  const slider = document.querySelector(".slider");
+  const scrollDistance = 2 * (325 + 18); 
+
+  document.getElementById("next-slide").addEventListener("click", function () {
+    slider.scrollBy(scrollDistance, 0);
+  });
+
+  document.getElementById("prev-slide").addEventListener("click", function () {
+    slider.scrollBy(-scrollDistance, 0);
+  });
+});
+
+              </script>
+              
+            <section id="product1" class="selection-p1">
+
+                <div class="container">
+                 <div class="pro">
+                     <img src="images/today1.jpg" alt="">
+                     <div class="des">
+                         <span>Bershka</span>
+                         <h5> Blouse</h5>
+                         <h6>From 19.99 $</h6>
+                         <h4>To 7.99 $</h4>
+                     </div>
+                     <a href="shop.html"><i class="fa fa-shopping-cart"></i></a>
+                 </div>
+                </div>
+                <div class="container">
+                    <div class="pro">
+                        <img src="images/today2.jpg" alt="">
+                        <div class="des">
+                            <span>Pull & Bear</span>
+                            <h5> Man Jacket</h5>
+                            <h6>From 129.99 $</h6>
+                            <h4>To 78.99 $</h4>
+                        </div>
+                        <a href="shop.html"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                   </div>
+                   <div class="container">
+                    <div class="pro">
+                        <img src="images/today3.jpg" alt="">
+                        <div class="des">
+                            <span>Bershka</span>
+                            <h5> Woman Pants</h5>
+                            <h6>From 24.99 $</h6>
+                            <h4>To 11.99 $</h4>
+                        </div>
+                        <a href="shop.html"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                   </div>
+                   <div class="container">
+                    <div class="pro">
+                        <img src="images/today4.jpg" alt="">
+                        <div class="des">
+                            <span>Bershka</span>
+                            <h5> Dress</h5>
+                            <h6>From 15.99 $</h6>
+                            <h4>To 5.99 $</h4>
+                        </div>
+                        <a href="shop.html"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                   </div>
+                   <div class="container">
+                    <div class="pro">
+                        <img src="images/today5.jpg" alt="">
+                        <div class="des">
+                            <span>Diesel</span>
+                            <h5> Man Jacket</h5>
+                            <h6>From 220.99 $</h6>
+                            <h4>To 130.99 $</h4>
+                        </div>
+                        <a href="shop.html"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                   </div>
+                   <div class="container">
+                    <div class="pro">
+                        <img src="images/today6.jpg" alt="">
+                        <div class="des">
+                            <span>Diesel</span>
+                            <h5> Man Jacket</h5>
+                            <h6>From 190.99 $</h6>
+                            <h4>To 80.99 $</h4>
+                        </div>
+                        <a href="shop.html"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                   </div>
+                
+              
+            </section>
+           
+
+            <footer class="section footer">
+                <div class="col">
+                    <a href="#"><i class="fas fa-shopping-cart"></i> Adi Boutique</a>
+                    <h4>Contact</h4>
+                    <p><strong>Address:  </strong> Lipjan Rr.Lidhja Prizerenit Nr:161</p>
+                    <p><strong>Phone:  </strong> 044-111-222   /   045-111-222</p>
+                    <p><strong>Schedule:  </strong> Mon-Fri :  09-19 ; Sat : 10-18 </p>
+                   </div>
+                    <div class="follow">
+                        <h4>Follow Us</h4>
+                        <div class="icon">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    
+                </div>
+            </footer>
+        </body>
+</html>
